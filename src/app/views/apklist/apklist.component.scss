@@ -1,0 +1,67 @@
+.content-background {
+  background-color: #f0f0f0; /* Color de fondo suave */
+}
+
+.video-list {
+  max-height: 100vh; /* Altura máxima para permitir desplazamiento */
+  overflow-y: auto; /* Habilita desplazamiento vertical */
+}
+
+.video-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: white;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+   margin: 10px auto 0; /* Centra el video y agrega margen superior */
+  object-fit: cover;
+  align-items: center; /* Centra el contenido horizontalmente */
+  text-align: center; /* Centra el texto y otros elementos */
+}
+
+
+.video-item:hover {
+  transform: scale(1.02); /* Efecto de aumento al pasar el mouse */
+}
+
+.video-title {
+  font-size: 1.5em; /* Título más grande */
+  font-weight: bold; /* Negrita */
+  margin-bottom: 10px; /* Espacio debajo del título */
+  text-align: center;
+}
+
+.video-description {
+  font-size: 1.1em; /* Tamaño de fuente para la descripción */
+  margin-bottom: 10px; /* Espacio debajo de la descripción */
+  text-align: center;
+}
+
+.video-thumbnail {
+  max-width: 100%; /* Asegurarse de que la imagen no exceda el ancho */
+  border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+.video-player {
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  height: 200px; /* Altura fija para estandarizar el tamaño */
+  max-width: 600px; /* Tamaño máximo para el ancho */
+  border-radius: 8px; /* Bordes redondeados para el reproductor */
+  margin-top: 10px; /* Espacio superior para separar de la imagen */
+  object-fit: cover; /* Ajusta el contenido del video para llenar el espacio */
+   margin: 10px auto 0; /* Centra el video y agrega margen superior */
+  object-fit: cover;
+}
+
+
+.video-item:focus {
+  outline: none; /* Quita el borde predeterminado de foco */
+  transform: scale(1.05); /* Efecto de ampliación */
+  border: 2px solid #ffd700; /* Bordes resaltados */
+  background-color: #333; /* Fondo oscuro al seleccionar */
+  color: #fff;
+}
+
+
